@@ -4,9 +4,20 @@
 /*
   General
 */
+* {
+
+  font-family: $text-arial
+}
+.padding-top-bottom {
+  padding-top: $size-medium;
+  padding-bottom: $size-small;
+}
+.margin-top-bottom {
+  margin-top: $size-medium;
+  margin-bottom: $size-small;
+}
 .container {
   margin: 0 auto;
-  max-width: 1280px;
   width: $size-width;
 }
 
@@ -47,12 +58,33 @@
 /*
 listas
 */
+#listas ul {
+  padding: 0;
+}
+#listas ul > li {
+  list-style: none;
+  margin: 7px 0;
+  padding: 2px 7px;
+  background-color: $bg-light-black;
+  color: $text-white;
+  font-size: $size-small;
 
+}
+#listas ul > li:last-child {
+  background-color: $bg-capitan;
+}
 /*
 ASIDE
 */
+.aside {
+  padding-right: $size-small;
+  padding-left: $size-small;
+}
 .aside, .footer {
   text-align: $center-align;
+  background-color: $bg-light-black;
+  color: $text-white;
+  font-size: $size-small;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -63,6 +95,7 @@ ASIDE
       margin-left: auto;
       left: auto;
       right: auto;
+
     }
   }
 
@@ -78,5 +111,7 @@ ASIDE
       right: auto;
     }
   }
-
+  #cont-exercise {
+    font-size: $size-small;
+  }
 }

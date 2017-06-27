@@ -1,9 +1,20 @@
 /*
   General
 */
+* {
+  font-family: "Arial"; }
+
+.padding-top-bottom {
+  padding-top: 21px;
+  padding-bottom: 12px;
+}
+
+.margin-top-bottom {
+  margin-top: 21px;
+  margin-bottom: 12px; }
+
 .container {
   margin: 0 auto;
-  max-width: 1280px;
   width: 100%; }
 
 .row {
@@ -103,11 +114,32 @@
 /*
 listas
 */
+#listas ul {
+  padding: 0; }
+
+#listas ul > li {
+  list-style: none;
+  margin: 7px 0;
+  padding: 2px 7px;
+  background-color: #626364;
+  color: #fff;
+  font-size: 12px; }
+
+#listas ul > li:last-child {
+  background-color: #ebb85d; }
+
 /*
 ASIDE
 */
+.aside {
+  padding-right: 12px;
+  padding-left: 12px; }
+
 .aside, .footer {
-  text-align: center; }
+  text-align: center;
+  background-color: #626364;
+  color: #fff;
+  font-size: 12px; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -254,6 +286,9 @@ ASIDE
     width: 100%;
     margin-left: auto;
     left: auto;
-    right: auto; } }
+    right: auto; }
+
+  #cont-exercise {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=main.css.map */
