@@ -4,6 +4,24 @@
 /*
   General
 */
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: $size-width;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .col{
   float:left;
   -webkit-box-sizing:border-box;
@@ -15,30 +33,50 @@
 @for $i from 1 through 12 {
   .col.s#{$i} {
     width: ($i / 12)*100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
   }
 }
 
-header {
+.header {
   background-color: $bg-capitan;
   color: $text-white;
   padding: 7px 7px;
 }
+/*
+listas
+*/
 
+/*
+ASIDE
+*/
+.aside, .footer {
+  text-align: $center-align;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   @for $i from 1 through 12 {
-  .col.m#{$i} {
-    width: ($i / 12)*100%;
+    .col.m#{$i} {
+      width: ($i / 12)*100%;
+      margin-left: auto;
+      left: auto;
+      right: auto;
+    }
   }
-}
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   @for $i from 1 through 12 {
-  .col.l#{$i} {
-    width: ($i / 12)*100%;
+    .col.l#{$i} {
+      width: ($i / 12)*100%;
+      margin-left: auto;
+      left: auto;
+      right: auto;
+    }
   }
-}
+
 }
