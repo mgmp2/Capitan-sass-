@@ -1,0 +1,44 @@
+@import 'colors';
+@import 'fonts';
+@import 'resolutions';
+/*
+  General
+*/
+.col{
+  float:left;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  padding:0 .75rem;
+  min-height:1px;
+}
+
+@for $i from 1 through 12 {
+  .col.s#{$i} {
+    width: ($i / 12)*100%;
+  }
+}
+
+header {
+  background-color: $bg-capitan;
+  color: $text-white;
+  padding: 7px 7px;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  @for $i from 1 through 12 {
+  .col.m#{$i} {
+    width: ($i / 12)*100%;
+  }
+}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  @for $i from 1 through 12 {
+  .col.l#{$i} {
+    width: ($i / 12)*100%;
+  }
+}
+}
